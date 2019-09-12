@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Homepage for website
+
+      Author: Andrea Ramirez
+      Date: Nov. 26, 2017
+      Filename: Home.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=page-width, initial-scale=1.0">
+   <title>Welcome!</title>
+   <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+
+      <header>
+	     <img src="corazon.png" alt="corazon" style="width:100px;height:100px;"
+			align="right"/>
+         <h1 align="center">Bachata</h1>
+      </header>
+	
+      <nav>
+         <ul align="center">
+            <li><a href="Home.html">Home</a></li>
+			<li><a href="pop.html">Pop Music</a></li>
+			<li><a href="reggaeton.html">Reggaeton</a></li>
+            <li><a href="bachata.html">Bachata</a></li>
+            <li><a href="regional.html">Regional Mexican</a></li>
+			<li><a href="references.html">References</a></li>
+         </ul>
+      </nav>
+
+	<article>
+	<p>
+	Bachata is known for its specific guitar sound that comes from the Dominican
+	Republic. According to <a href="http://www.iasorecords.com/music/what-is-bachata" target="_blank">iasorecords.com</a>,
+	Bachata was first associated with poverty, prostitution, and poverty. This association was taken so 
+	seriously that only one national radio would play it. Later on, these associations would transform
+	the Bachata music style to a romantic style. As Bachata is today, it is at it's peak of popularity. 
+	It's listened throughout Latin America and iasorecords claims it to be the most popular Latin genre in 
+	New York City. 
+	</p>
+	
+	<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+	
+	<p>
+	<img src="royce.png" alt="royce" /><br>
+	Now onto artists that I think would be great introductions to Bachata that I would highly recommend!
+	I think the easiest transition to Bachata would be to start off with Prince Royce, whose real name is
+	Geoffrey Royce Rojas, and was born in The Bronx, New York. Prince Royce made his debut album in 2010. The
+	website <a href="https://www.allmusic.com/artist/prince-royce-mn0002385531/biography" target="_blank">allmusic.com</a>
+	states that Prince Royce's debut album was well received by Bachata fans and that the twenty-year old 
+	was favorably compared to Aventura and other urban-oriented artists from New York. Prince Royce later 
+	released his next album in 2012 called "Phase II", which reached platinum status and peaked at number
+	16 on the Billboard 200. He continued to release albums in 2013 and 2014, called "Soy el Mismo" and 
+	"Double Vision", respectively. The album "Double Vision" was sung primarily in English, a first for 
+	Prince Royce. He also later released his newest album "Five" in 2017. 
+	</p>
+	
+	<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+	
+	<p>
+	<img src="santos.png" alt="santos" /><br>
+	The next artist that I will talk about is Romeo Santos. His full name is Anthony 'Romeo' Santos, and 
+	he was also born in The Bronx, New York. When Romeo Santos was just thirteen, he formed the group called
+	Los Teenagers, which was very popular in the New York City area. In 1999, Romeo Santos signed a record deal with the label 
+	Premium Latin, and <a href="https://www.thoughtco.com/romeo-santos-biography-and-artist-profile-2141886" target="_blank">thoughtco.com</a> 
+	states that the band then changed their name to Grupo Aventura. That same year that they signed was the year they released
+	their first album "Generation Next", which was very well received. The next year, in 2002, the band released their second 
+	album called "We Broke The Rules". This album included the hit song "Obsesión', and it transformed Aventura into the most
+	popular Latin boy band at the time. After many years of being in the group, Romeo Santos decided to leave the group and 
+	pursue a solo career in 2011. He proceeded to continue his success solo, by selling out three consecutive nights at Madison
+	Square Garden in 2012, and selling out a double show at Yankee Stadium. His album "Formula Vol. 1" that was released in 2011
+	became the one of the most popular Latin music albums of that same year including the following year (2012). His second album
+	"Formula Vol. 2", which was released in 2014, became the best-selling album of that year. His newest single is "Héroe Favorito",
+	which was released in early 2017.
+	</p>
+	
+	<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+	
+	<form id="Form">
+	
+		<legend><span><u><h3>Choose <span class="red">ONE</span> artist that you found interesting:</u></h3></span></legend>
+		<label for="Prince Royce">Prince Royce</label><br>
+		<input id="RoyceOption" type="radio" name="artist" value="Prince Royce"/><br>
+		<label for="Maluma">Romeo Santos</label><br>
+		<input id="SantosOption" type="radio" name="artist" value="Romeo Santos"/><br>
+		
+		<input type="button" onclick="myFunction()" value="Submit"><br>
+		<input type="text" id="Summary" size="50">
+		<input type="reset"value="Clear"/><br>
+
+	</form>
+	
+	<script>
+	function myFunction()
+	{
+		var artist = document.forms[0];
+		var txt = "";
+		var i;
+		for (i = 0; i < artist.length; i++) 
+		{
+			if (artist[i].checked) 
+			{
+				txt = txt + artist[i].value + " ";
+			}
+		}
+		document.getElementById("Summary").value = "The artist you chose was: " + txt;
+	}
+	</script><br>
+	</article>
+	
+
+	<footer align="center">&#9889;&#9748; <em>Andrea Ramirez</em> &#9748;&#9889;</footer>
+	</body>
+</html>

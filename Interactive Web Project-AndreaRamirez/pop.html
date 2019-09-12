@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Homepage for website
+
+      Author: Andrea Ramirez
+      Date: Nov. 26, 2017
+      Filename: Home.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=page-width, initial-scale=1.0">
+   <title>Welcome!</title>
+   <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+
+      <header>
+	     <img src="microphone.png" alt="microphone" style="width:100px;height:100px;"
+			align="right"/>
+         <h1 align="center">Pop Music</h1>
+      </header>
+	
+      <nav>
+         <ul align="center">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="pop.html">Pop Music</a></li>
+			<li><a href="reggaeton.html">Reggaeton</a></li>
+            <li><a href="bachata.html">Bachata</a></li>
+            <li><a href="regional.html">Regional Mexican</a></li>
+			<li><a href="references.html">References</a></li>
+         </ul>
+      </nav>
+
+	<article>
+		<p>
+		Latin pop music is like pop music anywhere, heavily produced and usually marketed towards
+		the masses. According to <a href="http://www.pbs.org/wgbh/latinmusicusa/music/latin-pop/" target="_blank">PBS</a>,
+		pop music holds some of its largest audiences in Latin America. This means that it shouldn't be surprising
+		that I had to include this genre in my list. Because of how many pop artists there are, the list had to be 
+		cut down extremely short. Don't worry, my list comes with many artists that I'm sure will satsify the pop 
+		craving we all get every once in a while.&#9786;
+		</p>
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+		
+		<p>
+		<img src="sebas.png" alt="sebas" /><br>
+		To start off the list, let me introduce Sebastián Yatra.
+		Yatra gained recognition in September of 2013 with his hit single "El Psicólogo", which charted all over Latin America,
+		but most notably in his home country of Columbia, as well as Venezuela, Ecuador, and the U.S., as stated by 
+		<a href="https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Yatra" target="_blank">Wikipedia</a>. Yatra then released a few more
+		songs throughout the next 2 years, but it wasn't until 2016 that his song "Tracionera" charted and solidified his success.
+		Yatra himself recommends anyone who is looking to get into his music to start off with "Traicionera"; I would also recommend
+		listening to "Suena El Dembow", which has come out recently and is performed along with Joey Montana.
+		<br>
+		</p>
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+		<p>
+		<img src="haash.png" alt="haash"/><br>
+		The next person on the list is Ha*Ash, which is a combination of their names, Hanna and Ashley. They are actually both sisters
+		and they were both born in Lake Charles, Los Angeles. The website 
+		<a href="https://www.allmusic.com/artist/haash-mn0000407099/biography" target="_blank">allmusic.com</a> states that the sisters 
+		began singing in their home church at the ages of five and six. Ha*Ash are known to mix rock, pop, and country together in their
+		songs. I recommend listening to their newest song "100 Años", which they perform along with Prince Royce
+		(who I mention <a href="bachata.html">here</a>).
+		<br>
+		</p>
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+		<p>
+		<img src="reik.png" alt="reik"/><br>
+		Reik is a special addition to the list, considering that they're a band. Reik was formed in Mexicali, Baja California in 2003. They 
+		were later signed in 2004 and wrote their first self-titled album with hits like "Que Vida La Mia" and "Noviembre Sin Ti" in 2005.
+		According to <a href="https://www.allmusic.com/artist/reik-mn0000628571/biography" target="_blank">allmusic.com</a>, Reik took a five
+		year break shortly after the release of their 2011 album "Peligro", and later came back in 2016 with their newest album called "Des/Amor"
+		which changed their sound. They wrote songs like "Voy a Olvidarte","Qué Gano Olvidándote", and "Ya Me Enteré" 
+	    (which features Nicky Jam, who I talk about <a href="reggaeton.html">here</a>) that were great hits and did well on the charts. 
+		</p>
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+	<form id="Form">
+	
+		<legend><span><u><h3>Choose <span class="red">ONE</span> artist that you found interesting:</u></h3></span></legend>
+		<label for="Sebastián Yatra">Sebastián Yatra</label><br>
+		<input id="SebasOption" type="radio" name="artist" value="Sebastián Yatra"/><br>
+		<label for="Ha*Ash">Ha*Ash</label><br>
+		<input id="HaOption" type="radio" name="artist" value="Ha*Ash"/><br>
+		<label for="Reik">Reik</label><br>
+		<input id="ReikOption" type="radio" name="artist" value="Reik"/><br>
+		
+		<input type="button" onclick="myFunction()" value="Submit"><br>
+		<input type="text" id="Summary" size="50">
+		<input type="reset"value="Clear"/><br>
+
+	</form>
+	
+	<script>
+	function myFunction()
+	{
+		var artist = document.forms[0];
+		var txt = "";
+		var i;
+		for (i = 0; i < artist.length; i++) 
+		{
+			if (artist[i].checked) 
+			{
+				txt = txt + artist[i].value + " ";
+			}
+		}
+		document.getElementById("Summary").value = "The artist you chose was: " + txt;
+	}
+	</script><br>
+	</article>
+	
+	<footer align="center">&#9889;&#9748; <em>Andrea Ramirez</em>&#9748;&#9889;</footer>
+	</body>
+</html>

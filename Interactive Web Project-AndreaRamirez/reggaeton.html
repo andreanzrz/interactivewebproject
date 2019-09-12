@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Homepage for website
+
+      Author: Andrea Ramirez
+      Date: Nov. 26, 2017
+      Filename: Home.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=page-width, initial-scale=1.0">
+   <title>Welcome!</title>
+   <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+
+      <header>
+		 <img src="speaker.png" alt="speaker" style="width:115px;height:115px;"
+			align="right"/>
+         <h1 align="center">Reggaeton</h1>
+      </header>
+	
+      <nav>
+         <ul align="center">
+            <li><a href="Home.html">Home</a></li>
+			<li><a href="pop.html">Pop Music</a></li>
+			<li><a href="reggaeton.html">Reggaeton</a></li>
+            <li><a href="bachata.html">Bachata</a></li>
+            <li><a href="regional.html">Regional Mexican</a></li>
+			<li><a href="references.html">References</a></li>
+         </ul>
+      </nav>
+
+	<article>
+		<p>
+		Reggaeton is said to be a mixture of various musical genres with
+		influences from various countries. Reggaeton's origins are closely
+		associated with Puerto Rico, where <a href="http://www.donquijote.org/culture/puerto-rico/music/reggaeton-music" target="_blank">donquijote.org</a>
+		states that it first gained momentum and later commercially packaged. Interestingly enough, most Reggaeton musicians happen to be Puerto Rican.
+		Reggaeton is often seen as provocative because of its lyrics, and is often associated with Hip-Hop. 
+		</p>
+		
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+		
+		<p>
+		<img src="balvin.png" alt="balvin" /><br>
+		The first artist that's going to be mentioned is J Balvin. J Balvin's real name is José Álvaro Osorio Balvin, and he is from Medellín, Colombia. 
+		J Balvin released his first single in 2009 called ""Ella Me Cautivó", and according to 
+		<a href="https://www.allmusic.com/artist/j-balvin-mn0002385504/biography" target="_blank">allmusic.com</a>, 
+		the song charted at 35 on the U.S. Tropical Chart. J Balvin's 2015 single "Ginza" entered the Hot Latin Songs chart at number one 
+		and later went to be certified platinum. He then went on to release his album "Energia" in 2016 which featured top artists like 
+		Pharell, Sky, and BIA. The album also had many contributions from top artists such as Daddy Yankee, Yandel, and Juanes. 
+		</p>
+		
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+		
+		<p>
+		<img src="maluma.png" alt="maluma" /><br>
+		The next artist that I'm going to talk about is Maluma. Maluma is also a stage name and his real name is Juan Luis Londoño Arias, and he
+		is also from Medellín, Colombia. Maluma started his singing career in 2011 with his song "Farandulera", which he released without being
+		signed to a label. As <a href="https://www.allmusic.com/artist/maluma-mn0002966736/biography" target="_blank">allmusic.com</a> has on their
+		website, Maluma's song gained so much popularity through the internet and radio airplay, that he was later signed to Sony Music.  The next year
+		Maluma released his debut album "Magia" and several of the songs on it received constant airplay. His song "La Temperatura" was his major hit
+		off his album and it received a Latin Grammy nomination. Since 2016 with his album "Pretty Boy, Dirty Boy", Maluma has been increasing 
+		in popularity and it seems that Maluma will keep staying on the charts. His next album that he's working is said to include both English
+		and Spanish material. 
+		</p>
+		
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+		
+		<p>
+		<img src="nickyjam.png" alt="nickyjam" /><br>
+		The last artist that I am going to mention is Nicky Jam. Nicky Jam is, you guessed it, a stage name. His real name is Nick Rivera, and was
+		born in Lawrence, Massachusetts. According to <a href="http://www.lamezcla.com/home/nicky-jam-biography/" target="_blank">lamezcla.com</a>,
+		Nicky Jam and his family later moved to Puerto Rico when Nicky Jam was only six years old. Nicky Jam created his first album when he was 
+		only eleven years old, and although it wasn't much of a success, he did get noticed by some music producers. Once he started working in
+		the music industry, he had the opportunity to meet Daddy Yankee in the early 2000s. They worked together for a while as friends, but ended
+		the friendship and soon went their separate ways. After eight years, Nicky Jam and Daddy Yankee reunited and worked on Daddy Yankee's album
+		together. The website <a href="https://www.allmusic.com/artist/nicky-jam-mn0000867980/biography" target="_blank">allmusic.com</a> states that
+		Nicky Jam has since released his own album in 2017, named "Fenix", and it's his first album since 2007. 
+		</p>
+		
+		<h3><span class="purple">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></h3>
+		
+	<form id="Form">
+	
+		<legend><span><u><h3>Choose <span class="red">ONE</span> artist that you found interesting:</u></h3></span></legend>
+		<label for="J Balvin">J Balvin</label><br>
+		<input id="BalvinOption" type="radio" name="artist" value="J Balvin"/><br>
+		<label for="Maluma">Maluma</label><br>
+		<input id="MaluOption" type="radio" name="artist" value="Maluma"/><br>
+		<label for="Nicky Jam">Nicky Jam</label><br>
+		<input id="NickyOption" type="radio" name="artist" value="Nicky Jam"/><br>
+		
+		<input type="button" onclick="myFunction()" value="Submit"><br>
+		<input type="text" id="Summary" size="50">
+		<input type="reset"value="Clear"/><br>
+
+	</form>
+	
+	<script>
+	function myFunction()
+	{
+		var artist = document.forms[0];
+		var txt = "";
+		var i;
+		for (i = 0; i < artist.length; i++) 
+		{
+			if (artist[i].checked) 
+			{
+				txt = txt + artist[i].value + " ";
+			}
+		}
+		document.getElementById("Summary").value = "The artist you chose was: " + txt;
+	}
+	</script><br>
+	</article>
+	
+	<footer align="center">&#9889;&#9748; <em>Andrea Ramirez</em> &#9748;&#9889;</footer>
+	</body>
+</html>
